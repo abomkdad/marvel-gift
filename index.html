@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عرض مارفيل</title>
+
+  <!-- ========== Meta Pixel Code ========== -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return; n=f.fbq=function(){ n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments) };
+      if(!f._fbq)f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+      n.queue=[]; t=b.createElement(e); t.async=!0; t.src=v; s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1278802597312896');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1278802597312896&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- ========== /Meta Pixel Code ========== -->
+
+  <!-- ========== Snap Pixel Code (Advanced) ========== -->
+  <script type="text/javascript">
+    (function(e,t,n){
+      if(e.snaptr) return;
+      var a=e.snaptr=function(){ a.handleRequest ? a.handleRequest.apply(a,arguments) : a.queue.push(arguments) };
+      a.queue=[]; var s='script'; var r=t.createElement(s); r.async=!0; r.src=n; var u=t.getElementsByTagName(s)[0]; u.parentNode.insertBefore(r,u);
+    })(window,document,'https://sc-static.net/scevent.min.js');
+
+    snaptr('init','33f9ce6c-9a7e-4019-8023-98c3ead1fdf0',{});
+    snaptr('track','PAGE_VIEW');
+
+    function submitSnapEvents(priceILS){
+      var price = Number(priceILS)||100;
+      snaptr('track','ADD_CART',{
+        price: price,
+        currency: 'ILS',
+        item_ids: ['marvel_offer'],
+        item_category: 'Perfume',
+        number_items: 1
+      });
+      snaptr('track','LEAD');
+      snaptr('track','PURCHASE',{
+        transaction_id: 'wa-' + Date.now(),
+        price: price,
+        currency: 'ILS',
+        item_category: 'Perfume',
+        item_ids: ['marvel_offer'],
+        quantity: 1
+      });
+    }
+  </script>
+  <!-- ========== /Snap Pixel Code ========== -->
+
+  <!-- ========== TikTok Pixel Code (Advanced) ========== -->
+  <script>
+    !function (w,d,t){
+      w.TiktokAnalyticsObject=t; var ttq=w[t]=w[t]||[];
+      ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+      ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat([].slice.call(arguments,0)))}};
+      for(var i=0;i<ttq.methods.length;i++) ttq.setAndDefer(ttq,ttq.methods[i]);
+      ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i=ttq._i||{}; ttq._i[e]=[]; ttq._i[e]._u=r; ttq._t=ttq._t||{}; ttq._t[e]=+new Date; ttq._o=ttq._o||{}; ttq._o[e]=n||{}; n=document.createElement("script"); n.type="text/javascript"; n.async=!0; n.src=r+"?sdkid="+e+"&lib="+t; e=document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(n,e)};
+      ttq.load('D2B1O33C77U89NHRM5J0');
+      ttq.page();
+      function trackTikTokEvents(priceILS){
+        var price = Number(priceILS)||100; var currency='ILS';
+        ttq.track('AddToCart',{value:price,currency:currency});
+        ttq.track('Lead');
+        ttq.track('CompletePayment',{value:price,currency:currency});
+      }
+      window.trackTikTokEvents = trackTikTokEvents;
+    }(window,document,'ttq');
+  </script>
+  <!-- ========== /TikTok Pixel Code ========== -->
+
+  <style>
+    :root{ --green:#28a745; --bg:#111; --card:#1e1e1e }
+    *{box-sizing:border-box}
+    body{ margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:#fff; direction:rtl }
+    .banner{ width:100%; display:block; max-width:100%; height:auto }
+    .progress-container{ background:#000; padding:20px 0; text-align:center }
+    .progress-wrapper{ background:#fff; border-radius:50px; overflow:hidden; margin:0 auto; width:80%; max-width:400px }
+    .progress-bar{ background:var(--green); width:100%; padding:10px; color:#fff; font-weight:bold; border-radius:50px }
+    .alert{ background:#fff3cd; color:#856404; padding:10px; text-align:center }
+    .form-container{ background:var(--card); padding:20px; margin:20px; border-radius:10px; max-width:500px; margin-left:auto; margin-right:auto }
+    .form-container h2{ text-align:center; color:#fff }
+    .form-group{ margin-bottom:15px }
+    .form-group input,.form-group textarea{ width:100%; padding:10px; border-radius:5px; border:none; background:#333; color:#fff }
+    .form-group textarea{ resize:none }
+    .submit-button{ background:var(--green); border:none; padding:12px; color:#fff; width:100%; font-size:16px; border-radius:5px; cursor:pointer }
+    video{ width:100%; max-height:80vh; display:block; margin:20px auto }
+
+    /* Bottom Fixed Action Bar (no icons) */
+    .bottom-action-bar{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#0f0f0f;border-top:1px solid rgba(255,255,255,.1);padding:10px calc(12px + env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));display:flex;gap:10px;align-items:center;justify-content:space-between;box-shadow:0 -8px 20px rgba(0,0,0,.35)}
+    .bottom-action-bar .btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:10px;border:none;cursor:pointer;font-weight:700;font-size:16px;text-decoration:none}
+    .btn-order{background:var(--green);color:#fff}
+    .btn-call{background:#1e1e1e;color:#fff;border:1px solid rgba(255,255,255,.15)}
+    .btn-wa{background:#25D366;color:#0b3d1f}
+    @media (min-width:768px){.bottom-action-bar{width:640px;margin:0 auto;left:0;right:0}}
+    .has-bottom-bar{padding-bottom:80px}
+  </style>
+</head>
+<body>
+  <img src="Untitled design (6).png" alt="عرض مارفيل" class="banner" />
+
+  <div class="progress-container">
+    <div class="progress-wrapper">
+      <div class="progress-bar">تبقى خطوة لاتمام الطلب</div>
+    </div>
+  </div>
+
+  <div class="alert" id="stockAlert">⏳ تبقّى 5 عملاء فقط يمكنهم الحصول على عرض مارڤيل قبل انتهاء العرض!</div>
+
+  <div class="form-container" id="orderForm">
+    <h2 id="formTitle">أرغب بطلب عرض عطور Marvel</h2>
+    <div class="form-group"><input type="text" id="name" placeholder="الاسم الكامل" /></div>
+    <div class="form-group"><input type="tel" id="phone" placeholder="رقم الهاتف" /></div>
+    <div class="form-group"><input type="text" id="address" placeholder="العنوان" /></div>
+    <div class="form-group"><textarea id="note" rows="3" placeholder="ملاحظة (اختياري)"></textarea></div>
+    <button class="submit-button" onclick="submitForm()" id="submitBtn">تأكيد الطلب</button>
+  </div>
+
+  <video autoplay muted playsinline onclick="toggleMute(this)">
+    <source src="https://madperfume.ps/upload/07-2025/page/Copy%20of%2028.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Bottom Fixed Action Bar (text only, no SVG icons) -->
+  <div class="bottom-action-bar" dir="rtl" id="bottomBar">
+    <a href="tel:+972506164130" class="btn btn-call" aria-label="اتصال" id="btnCallBottom">اتصال</a>
+    <button class="btn btn-order" type="button" onclick="scrollToOrder()" aria-label="اطلب الآن" id="btnOrderBottom">اطلب الآن</button>
+    <a href="https://wa.me/972506164130" target="_blank" rel="noopener" class="btn btn-wa" aria-label="واتساب" id="btnWaBottom">واتساب</a>
+  </div>
+
+  <script>
+    function toggleMute(video){ video.muted = !video.muted }
+
+    function submitForm(){
+      var name = document.getElementById('name').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var address = document.getElementById('address').value.trim();
+      var note = document.getElementById('note').value.trim();
+      var product = (window.location.pathname.split('/').pop().split('.')[0] || 'عرض مارفيل');
+
+      var lang = navigator.language || navigator.userLanguage; var isHebrew = (lang||'').includes('he');
+      var message = isHebrew
+        ? `שלום, אני מעוניין לבצע הזמנה עבור מבצע הבשמים Marvel:\n👤 שם: ${name}\n📞 טלפון: ${phone}\n🏠 כתובת: ${address}\n📝 הערה: ${note || 'ללא'}`
+        : `مرحباً، أود طلب عرض ${product}:\n👤 الاسم: ${name}\n📞 الهاتف: ${phone}\n🏠 العنوان: ${address}\n📝 ملاحظة: ${note || 'لا يوجد'}`;
+
+      var encodedMessage = encodeURIComponent(message);
+      var url = `https://wa.me/972506164130?text=${encodedMessage}`;
+
+      // Track (Meta + TikTok + Snap)
+      fbq('track','Lead');
+      fbq('track','Purchase',{value:100,currency:'ILS'});
+      try{ trackTikTokEvents(100); }catch(e){}
+      try{ submitSnapEvents(100); }catch(e){}
+
+      window.open(url,'_blank');
+    }
+
+    // Locale adjustments (Hebrew) + bottom bar translations
+    (function(){
+      var lang = navigator.language || navigator.userLanguage;
+      if((lang||'').includes('he')){
+        document.getElementById('formTitle').innerText = 'אני מעוניין להזמין את מבצע הבשמים של Marvel';
+        document.getElementById('name').placeholder = 'השם המלא';
+        document.getElementById('phone').placeholder = 'מספר טלפון';
+        document.getElementById('address').placeholder = 'כתובת';
+        document.getElementById('note').placeholder = 'הערה (לא חובה)';
+        document.getElementById('submitBtn').innerText = 'אישור ההזמנה';
+        document.getElementById('stockAlert').innerText = '⏳ נותרו רק 5 לקוחות שיכולים להזמין את ההצעה לפני סיומה!';
+        document.querySelector('.progress-bar').innerText = 'נשאר שלב אחד להשלמת ההזמנה';
+        document.getElementById('btnOrderBottom').innerText = 'הזמן עכשיו';
+        document.getElementById('btnOrderBottom').setAttribute('aria-label','הזמן עכשיו');
+        document.getElementById('btnCallBottom').innerText = 'שיחה';
+        document.getElementById('btnWaBottom').innerText = 'וואטסאפ';
+      } else {
+        document.getElementById('btnOrderBottom').innerText = 'اطلب الآن';
+        document.getElementById('btnOrderBottom').setAttribute('aria-label','اطلب الآن');
+        document.getElementById('btnCallBottom').innerText = 'اتصال';
+        document.getElementById('btnWaBottom').innerText = 'واتساب';
+      }
+      try{ document.body.classList.add('has-bottom-bar'); }catch(e){}
+    })();
+
+    function scrollToOrder(){
+      var el = document.getElementById('orderForm') || document.querySelector('.form-container, form, #form');
+      if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }
+  </script>
+</body>
+</html>
